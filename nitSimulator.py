@@ -43,7 +43,7 @@ def payment_cost(threshold: float, percent: float, df: pd.DataFrame, tax_rates: 
 
 
 def main():
-    income_percentiles = pd.read_csv('data.csv')
+    income_percentiles = pd.read_csv("data.csv")
     tax_rates = pd.read_csv("tax_rates.csv")
     threshold = float(input("What threshold do you want the NIT to apply to?"))
     percent = float((input("What percent of the threshold minus income should the NIT give?")))
