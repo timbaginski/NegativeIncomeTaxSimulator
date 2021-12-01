@@ -49,8 +49,7 @@ def main():
     percent = float((input("What percent of the threshold minus income should the NIT give?")))
     cost = round(payment_cost(threshold, percent / 100, income_percentiles, tax_rates), 2)
 
-    print("A NIT guaranteeing " + str(percent) + "% of a threshold of $" +
-          str(threshold) + " would cost: $" + f'{cost:,}')
+    print(f"A NIT guaranteeing {percent}% of a threshold of ${threshold} would cost: ${cost:,}")
 
 
 main()
